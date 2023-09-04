@@ -9,3 +9,6 @@ catalogue.joindevops.cloud
 
 [redis]
 redis.joindevops.cloud
+
+[cart]
+cart.joindevops.cloud

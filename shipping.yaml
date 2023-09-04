@@ -1,0 +1,10 @@
+- name: shipping
+  hosts: shipping
+  become: yes
+  tasks:
+  - name: installing maven
+    ansible.builtin.yum:
+      name: maven
+      state: installed
+
+  
