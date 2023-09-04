@@ -1,5 +1,5 @@
 - name: rabbitMQ
-  hosts: rabbitMQ
+  hosts: rabbitmq 
   become: yes
   tasks:
   - name: configure rabbitmq yum repos
