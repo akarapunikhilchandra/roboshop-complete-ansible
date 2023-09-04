@@ -65,7 +65,7 @@
       state: installed
 
   - name: loading schema
-    ansible.builtin.shell: mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+    ansible.builtin.shell: mysql -h mysql.joindevops.cloud -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 
   - name: restart shipping
     ansible.builtin.service:
