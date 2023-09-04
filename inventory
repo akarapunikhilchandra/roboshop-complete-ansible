@@ -12,3 +12,18 @@ redis.joindevops.cloud
 
 [cart]
 cart.joindevops.cloud
+
+[user]
+user.joindevops.cloud
+
+[mysql]
+mysql.joindevops.cloud
+
+[shipping]
+shipping.joindevops.cloud
+
+[rabbitmq]
+rabbitmq.joindevops.cloud
+
+[payment]
+payment.joindevops.cloud
