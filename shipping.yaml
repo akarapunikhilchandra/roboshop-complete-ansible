@@ -68,7 +68,7 @@
     ansible.builtin.shell: mysql -h mysql.joindevops.cloud -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 
   - name: restart shipping
-    ansible.builtin.systemd
+    ansible.builtin.systemd:
       name: shipping
       state: restarted
       enabled: true
