@@ -1,5 +1,5 @@
 #!/bin/bash
-NAMES=("redis")
+NAMES=("user")
 INSTANCE_TYPE=" "
 IMAGE_ID=ami-03265a0778a880afb
 SECURITY_GROUP_ID=sg-0c21f4afbf4430ceb
