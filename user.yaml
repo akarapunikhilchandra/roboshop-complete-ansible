@@ -69,7 +69,7 @@
 
   - name: installing mongodb-org-shell
     ansible.builtin.yum:
-      name: user
+      name: mongodb-org-shell
       state: installed
 
   - name: loading schema
