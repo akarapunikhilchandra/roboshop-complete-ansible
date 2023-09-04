@@ -53,11 +53,11 @@
     ansible.builtin.systemd:
       daemon_reload: true
 
-  - name: starting and enabling shipping
-    ansible.builtin.service:
-      name: shipping
-      state: started
-      enabled: true
+  # - name: starting and enabling shipping
+  #   ansible.builtin.service:
+  #     name: shipping
+  #     state: started
+  #     enabled: true
 
   - name: installing mysql
     ansible.builtin.yum:
