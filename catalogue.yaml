@@ -11,7 +11,7 @@
       state: installed
 
   - name: checkroboshop user exist or not 
-    ansible.bulitin.command: id roboshop
+    ansible.builtin.command: id roboshop
     register: out
     ignore_errors: true 
 
