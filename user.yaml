@@ -69,15 +69,17 @@
 
   - name: installing mongodb-org-shell
     ansible.builtin.yum:
-      name: mongodb
+      name: user
       state: installed
 
   - name: loading schema
     ansible.builtin.shell: mongo --host mongodb.joindevops.cloud < /app/schema/user.js
 
-
-
-    
+  - name: restart user
+    ansible.builtin.service:
+      name: user
+      state: restarted
+      enabled: true
   
 
 
