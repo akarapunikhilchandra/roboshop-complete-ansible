@@ -15,7 +15,7 @@
   - name: enabling nginx
     ansible.builtin.service:
       name: nginx
-      state: enabled
+      state: enabled 
 
   - name: Remove file 
     ansible.builtin.file:
@@ -35,7 +35,7 @@
 
 
   - name: restarting nginx
-    ansible.builtin.shell:
+    ansible.builtin.service:
       name: nginx
       state: restarted   
 
