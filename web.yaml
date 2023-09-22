@@ -7,11 +7,15 @@
       name: nginx
       state: installed
 
-  - name: starting and enabling nginx
+  - name: starting nginx
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: true
+
+  - name: enabling nginx
+    ansible.builtin.service:
+      name: nginx
+      state: enabled
 
   - name: Remove file 
     ansible.builtin.file:
