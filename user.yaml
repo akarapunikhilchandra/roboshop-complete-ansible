@@ -56,12 +56,6 @@
     ansible.builtin.systemd:
       daemon-reload: true
 
-  - name: enabling and start user
-    ansible.builtin.service:
-      name: user
-      state: started
-      enabled: true
-
   - name: copy mongo.repo
     ansible.builtin.copy:
       src: mongodb.repo
@@ -80,8 +74,6 @@
       name: user
       state: restarted
       enabled: true
-  
-
 
 
   
